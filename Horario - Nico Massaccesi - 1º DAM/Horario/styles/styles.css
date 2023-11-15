@@ -1,0 +1,50 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+table{
+    border: 20px solid black;
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+    border-radius: 10px;
+    font-family: 'Shrikhand', cursive;
+    font-size: xx-large;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: black;
+    -webkit-text-fill-color: white;
+
+    
+}
+td{
+    border: dotted;
+    border-radius: 25px;
+}
+.entornos{
+    background-color: #264653;
+}
+.programacion{
+    background-color: #2a9d8f
+}
+.bases{
+    background-color: #e9c46a;
+}
+.marcas{
+    background-color: #f4a261;
+}
+.formacion{
+    background-color: #e76f51;
+}
+.sistemas{
+    background-color: #780000;
+}
+.recreo{
+    background-color: #669bbc;
+    letter-spacing: 6dvw;
+}
+
+/* Palettes usadas: https://coolors.co/palette/264653-2a9d8f-e9c46a-f4a261-e76f51
+                    https://coolors.co/palette/780000-c1121f-fdf0d5-003049-669bbc */

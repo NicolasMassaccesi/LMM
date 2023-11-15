@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+    <title>PRACTICA 3</title>
+</head>
+
+<body>
+    <header class="cabecera">
+        <div class="buscador">
+            <img class="imagen" src="./images/buscar.png" alt="ERROR">
+            <input type="text" name="text" class="input" placeholder="Buscar...">
+        </div>
+        <div class="botones">
+            <img class="imagen" src="./images/inicio.png" alt="ERROR">
+            <a href="#primeraPagina"><button class="boton"><span>INICIO
+
+                    </span></button></a>
+            <img class="imagen" src="./images/sobremi.png" alt="ERROR">
+            <button class="boton"><span>SOBRE MI</span></button>
+            <img class="imagen" src="./images/galeria.png" alt="ERROR">
+            <button class="boton"><span>GALERIA</span></button>
+            <img class="imagen" src="./images/nuevo.png" alt="ERROR">
+            <a href="#segundaPagina"><button class="boton"><span>NUEVO FORMULARIO
+
+                    </span></button></a>
+            <img class="imagen" src="./images/contacto.png" alt="ERROR">
+            <a href="#terceraPagina"><button class="boton"><span>CONTACTO
+
+                    </span></button></a>
+        </div>
+
+    </header>
+    <section id="primeraPagina" class="primeraPagina">
+        <div class="imagen">
+
+        </div>
+        <div class="textoImagen">
+            <div class="titulo">NICOLÁS AGUSTÍN MASSACCESI</div>
+            <div class="texto">Técnico Superior en Desarrollo de Aplicaciones Multiplataforma</div>
+
+        </div>
+    </section>
+    <section id="segundaPagina" class="segundaPagina">
+        <form class="form">
+            <div class="title">Bienvenido,<br><span>regístrate para continuar</span></div>
+            <input class="input" name="email" placeholder="E-mail" type="text"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+            <input class="input" name="nombre" placeholder="Nombre" type="text" pattern="^[a-zA-ZáéíóúÁÉÍÓÚñÑ ]+$">
+            <input class="input" name="apellido" placeholder="Apellido" type="text" pattern="^[a-zA-ZáéíóúÁÉÍóÚñÑ ]+$">
+            <input class="input" name="direccion" placeholder="Dirección" type="text"
+                pattern="[A-za-zo-9\s, ./]{1,100}">
+            <input class="input" name="telefono" placeholder="Teléfono" type="text" pattern="[0-9]{3}[0-9]{3}[0-9]{3}">
+            <div id="condicionesCheckbox" class="input">
+                <input type="checkbox" required>
+                <p>He leído y acepto los términos y condiciones de uso.</p>
+            </div>
+            <input class="button-confirm" type="submit"></input>
+
+        </form>
+    </section>
+    <section id="terceraPagina" class="terceraPagina">
+        <form class="form">
+            <div class="container">
+                <p>Aficiónes</p>
+                <div class="wrapper">
+                    <div class="pass-settings">
+                        <label class="title">¿Cuál es tu hobby favorito?</label>
+                        <ul class="options">
+                            <li class="option">
+                                <input id="futbol" type="radio" name="fav_hobby" value="Fútbol">
+                                <label for="futbol">Fútbol</label>
+                            </li>
+                            <li class="option">
+                                <input id="basquet" type="radio" name="fav_hobby" value="Basquet">
+                                <label for="basquet">Basquet</label>
+                            </li>
+                            <li class="option">
+                                <input id="cantar" type="radio" name="fav_hobby" value="Cantar">
+                                <label for="cantar">Cantar</label>
+                            </li>
+                            <li class="option">
+                                <input id="bailar" type="radio" name="fav_hobby" value="Bailar">
+                                <label for="bailar">Bailar</label>
+                            </li>
+                            <li class="option">
+                                <input id="play" type="radio" name="fav_hobby" value="Jugar a la play">
+                                <label for="play">Jugar a la play</label>
+                            </li>
+                            <li class="option">
+                                <input id="otro1" type="radio" name="fav_hobby" value="Otro">
+                                <label for="otro1">Otro</label>
+                            </li>
+                        </ul>
+                        <label class="title">¿Tocas alguno de estos intrumentros?</label>
+                        <ul class="options">
+                            <li class="option">
+                                <input id="guitarra" type="checkbox">
+                                <label for="guitarra">Guitarra</label>
+                            </li>
+                            <li class="option">
+                                <input id="violin" type="checkbox">
+                                <label for="violin">Violín</label>
+                            </li>
+                            <li class="option">
+                                <input id="flauta" type="checkbox">
+                                <label for="flauta">Flauta</label>
+                            </li>
+                            <li class="option">
+                                <input id="piano" type="checkbox">
+                                <label for="piano">Piano</label>
+                            </li>
+                            <li class="option">
+                                <input id="bateria" type="checkbox">
+                                <label for="bateria">Batería</label>
+                            </li>
+                            <li class="option">
+                                <input id="otro2" type="checkbox">
+                                <label for="otro2">Otro</label>
+                            </li>
+                        </ul>
+                        <label class="title">¿Cuántas horas al día le dedicas a tus hobbies?</label>
+                        <input id="horas" class="input" placeholder="0-24" type="number" min="0" max="24">
+                    </div>
+                </div>
+            </div>
+        </form>
+        <form class="form">
+            <div class="container">
+                <p>Gustos Personales</p>
+                <div class="wrapper">
+                    <div class="pass-settings">
+                        <label for="bebida" class="title">Elige una bebida:</label>
+                        <select class="input" name="bebida" id="bebida">
+                            <option value="soda">Soda</option>
+                            <option value="jugo">Jugo</option>
+                            <option value="agua">Agua</option>
+                            <option value="café">Café</option>
+                            <option value="otra">Otra</option>
+                        </select><br><br>
+                        <label for="musical" class="title">Elige un género músical:</label>
+                        <select class="input" name="musical" id="musical">
+                            <option value="rock">Rock</option>
+                            <option value="pop">Pop</option>
+                            <option value="electronica">Electrónica</option>
+                            <option value="clasica">Clasica</option>
+                            <option value="otro">Otro</option>
+                        </select><br><br>
+                        <label for="color" class="title">Elige un color:</label>
+                        <select class="input" name="color" id="color">
+                            <option value="rojo">Rojo</option>
+                            <option value="azul">Azul</option>
+                            <option value="amarillo">Amarillo</option>
+                            <option value="verde">Negro</option>
+                            <option value="negro">Otro</option>
+                        </select><br><br>
+                        <label for="videojuego" class="title">Elige un videojuego:</label>
+                        <select class="input" name="videojuego" id="videojuego">
+                            <option value="lol">League of Legends</option>
+                            <option value="cod">Call of Duty</option>
+                            <option value="gi">Genshin Impact</option>
+                            <option value="fifa">FIFA</option>
+                            <option value="otra">Otro</option>
+                        </select><br><br>
+                        <label for="amigos" class="title">¿Cómo te llevas con tus amigos?</label>
+                        <select class="input" name="amigos" id="amigos">
+                            <option value="excelente">Excelente</option>
+                            <option value="bien">Bien</option>
+                            <option value="regular">Regular</option>
+                            <option value="mal">Mal</option>
+                            <option value="noTengo">No tengo</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <form class="form">
+            <div class="container">
+                <p>Sugerencias</p>
+                <div class="wrapper">
+                    <div class="pass-settings">
+                        <label class="title">Envíanos tus sugerencias...</label>
+                        <ul class="options">
+                            <textarea class="option" id="textarea" name="message" rows="10"
+                                cols="30">Escribe aquí...</textarea>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </form>
+    </section>
+    <footer class="piePagina">
+        PIE DE PAGINA
+    </footer>
+</body>
+
+</html>
