@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --cabeceraPieHeight: 8vh;
+    --sectionHeight: 90vh;
+    --sectionWidth: 90vw;
+}
+.cabecera{
+    background-color: black;
+    color: white;
+    height: var(--cabeceraPieHeight);
+}
+.principal{
+    background-image: url(../images/sky.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding: 2vw; */
+
+}
+#inicio, #sobreMi, #formulario, #galeria, #contacto{
+    background-color:wheat;
+    /* margin: 2vw; */
+}
+#inicio{
+    height: calc(var(--sectionHeight) - var(--cabeceraPieHeight)) ;
+    width: var(--sectionWidth);
+}   
+#sobreMi{
+    height: var(--sectionHeight);
+    width: var(--sectionWidth);
+
+}
+#formulario{
+    height: var(--sectionHeight);
+    width: var(--sectionWidth);
+}
+#galeria{
+    height: var(--sectionHeight);
+    width: var(--sectionWidth);
+}
+#contacto{
+    height: calc(var(--sectionHeight) - var(--cabeceraPieHeight)) ;
+    width: var(--sectionWidth);
+}
+.pie{
+    background-color: black;
+    color: white;
+    height: var(--cabeceraPieHeight);
+}
