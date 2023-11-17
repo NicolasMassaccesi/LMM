@@ -6,11 +6,50 @@
     --cabeceraPieHeight: 8vh;
     --sectionHeight: 90vh;
     --sectionWidth: 90vw;
+    --lightBlueBackground: #66D0FF;
+    --cloudColor: #ECEFF1;
 }
 .cabecera{
-    background-color: black;
-    color: white;
+    background-color: var(--lightBlueBackground);
+    color: var(--cloudColor);
     height: var(--cabeceraPieHeight);
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+
+.navegadorBuscador, .navegadorBotones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icono{
+    border: 3px solid #56b2da;
+    border-radius: 100%;
+    height: 3%;
+    width: 3%;
+}
+
+button, input {
+    background: var(--cloudColor);
+    font-family: inherit;
+    padding: 1em;
+    font-weight: 900;
+    font-size: 1vw;
+    border: 3px solid var(--cloudColor);
+    border-radius: 0.4em;
+    box-shadow: 0.1em 0.1em rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    transform: translate(-0.05em, -0.05em);
+    box-shadow: 0.15em 0.15em;
+}
+
+button:active {
+    transform: translate(0.05em, 0.05em);
+    box-shadow: 0.05em 0.05em;
 }
 .principal{
     background-image: url(../images/sky.avif);
@@ -25,7 +64,7 @@
 }
 #inicio, #sobreMi, #formulario, #galeria, #contacto{
     background-color:wheat;
-    /* margin: 2vw; */
+    margin: 2vw;
 }
 #inicio{
     height: calc(var(--sectionHeight) - var(--cabeceraPieHeight)) ;
@@ -52,4 +91,10 @@
     background-color: black;
     color: white;
     height: var(--cabeceraPieHeight);
+}
+
+@media screen and (max-width : 768px) {
+    .principal{
+        background-image: url(../images/night-sky.jpg);
+    }
 }
