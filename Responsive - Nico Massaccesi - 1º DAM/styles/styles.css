@@ -65,6 +65,7 @@ button:active {
 #inicio, #sobreMi, #formulario, #galeria, #contacto{
     background-color:wheat;
     margin: 2vw;
+    border-radius: 10px;
 }
 #inicio{
     height: calc(var(--sectionHeight) - var(--cabeceraPieHeight)) ;
