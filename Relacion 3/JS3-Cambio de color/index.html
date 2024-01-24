@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cambiar colores de un DIV</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+
+
+</head>
+<body>
+    <h1 id="titulo"></h1>
+    <div class="contenido"> 
+        <section class="botones">
+            <input type="button" value="rojo" id="btnrojo" onclick="setColorRojo()" onmouseover="setColorMouseOverRojo()" onmouseleave="setColorMouseLeaveReset(id)" onmousedown="setColorMouseDown(id)" onmouseup="setColorMouseOverRojo()">
+            <input type="button" value="verde" id="btnverde" onclick="setColorVerde()" onmouseover="setColorMouseOverVerde()" onmouseleave="setColorMouseLeaveReset(id)" onmousedown="setColorMouseDown(id)" onmouseup="setColorMouseOverVerde()">
+            <input type="button" value="azul" id="btnazul" onclick="setColorAzul()" onmouseover="setColorMouseOverAzul()" onmouseleave="setColorMouseLeaveReset(id)" onmousedown="setColorMouseDown(id)" onmouseup="setColorMouseOverAzul()">
+            <input type="button" value="amarillo" id="btnamarillo" onclick="setColorAmarillo()" onmouseover="setColorMouseOverAmarillo()" onmouseleave="setColorMouseLeaveReset(id)" onmousedown="setColorMouseDown(id)" onmouseup="setColorMouseOverAmarillo()">
+            <input type="button" value="rosa" id="btnrosa" onclick="setColorRosa()" onmouseover="setColorMouseOverRosa()" onmouseleave="setColorMouseLeaveReset(id)" onmousedown="setColorMouseDown(id)" onmouseup="setColorMouseOverRosa()">
+            <input type="button" value="reset" id="btnreset" onclick="setColorReset()">
+        </section>
+        <div class="box">
+        </div>
+    </div>
+    
+    <script src="js/changecolor.js"></script>
+</body>
+</html>

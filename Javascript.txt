@@ -1,0 +1,14 @@
+let -> variable local
+var -> variable global
+const -> constante
+
+
+let i=0;
+let caracter="Hola Mundo";
+let vari=false;
+
+
+.document.getElementById
+.document.getElementByClassName
+.document.querySelector("div")
+.document.querySelectorAll("div)
